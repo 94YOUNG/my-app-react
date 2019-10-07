@@ -8,6 +8,7 @@ import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
+import {Pagination} from 'antd';
 
 const ExpansionPanel = withStyles({
 	root: {
@@ -59,6 +60,7 @@ export default function Demo() {
 
 	return (
 		<div>
+			<Pagination />
 			<ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
 				<ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
 					<Typography>Collapsible Group Item #1</Typography>
@@ -96,3 +98,9 @@ export default function Demo() {
 		</div>
 	);
 }
+
+var b={
+	q:1,
+	2:3
+}
+export {b};

@@ -8,6 +8,8 @@ import {Router} from 'react-router';
 import Demo from './components/demo';
 import RenderTreeDemo from './components/renderTree';
 import {CustomForm} from './components/refDemo';
+import Pagination from './components/Pagination';
+import TextFields from './components/input';
 
 function App() {
 	return (
@@ -26,6 +28,21 @@ function App() {
 					Learn React
 				</a>
 			</header>*/}
+
+
+
+			<div class="container">
+				<div style={{width:'100px'}}>q</div>
+				<div class="div5 div">width和height</div>
+				{/*<div class="div5 div">width和height</div>*/}
+				<div style={{width:'100px'}}>q</div>
+
+				<div style={{width:'100px'}}>q</div>
+
+				<div style={{width:'100px'}}>q</div>
+				<Pagination />
+			</div>
+
 			<Provider store={myAppStore}>
 				<BrowserRouter>
 					<CustomForm />
@@ -66,6 +83,7 @@ function App() {
 				{/*	isActive={oddEvent}*/}
 				{/*>Event 123</NavLink>*/}
 			</Provider>
+			<TextFields />
 		</div>
 	);
 }
