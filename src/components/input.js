@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
+import useTheme from '@material-ui/core/styles/useTheme';
 
 const useStyles = makeStyles(theme => ({
 	container: {
@@ -47,6 +48,8 @@ const currencies = [
 
 export default function TextFields() {
 	const classes = useStyles();
+	const theme=useTheme();
+	console.log(theme);
 	const [values, setValues] = React.useState({
 		name: 'Cat in the Hat',
 		age: '',
